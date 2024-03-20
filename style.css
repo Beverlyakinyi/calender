@@ -1,10 +1,39 @@
 #calendar{
-    background-image: url(IMAGE/j.jpg);
+    background-color: aqua;
+    float: center;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    border: solid;
+    padding: 2%;
+    width: 20%;
+    margin-left: 40%;
+    justify-content: center;
+    font-size: xx-large;
+    
+
+
+
+    
 }
-#body{
-    font-size: 500%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#left{
+    height: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    column-gap: 36cap;
+    background-color: yellow;
+    font-size: xx-large;
 }
-#change{
-    gap: 15%;
+#right{
+    height: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    column-gap: 36cap;
+
+}#date{
+    color: blue;
+
 }

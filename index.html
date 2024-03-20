@@ -3,68 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="body">
     <div id="calendar">
-    <thread>
-        <tr>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Wen</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-    </tr>
-    <br>
-    </thread>
-    <month>
-        <tr id="change">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>1</td>
-            <td>2</td>
-        </tr>
-        <br>
-        <tr>
-            <td style="gap: 2%;">3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <br>
-        <tr>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-        </tr>
-        <br>
-        <tr>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-        </tr>
-    </thread>
-        </month>
+        <div id="months">
+            <div id="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div id="right">
+                <p id="month">January</p>
+                <p id="year">2024</p>
+            </div>
+                
+            </div>
+        
     </div>
-</div>
+    <script>
+        const date = document.getElementById("date");
+        var month = document.getElementById("month");
+        const day = document.getElementById("day");
+        const year = document.getElementById("year");
+
+        const today  = new Date ();
+        const weekdays=["sunday","monday","tuesday","wednesday","thursday","friday","sarturday"];
+        const allmonth=["January","february","march","April","May","June","July","August","September","October","Novenber","December"];
+        
+        date.innerHTML=(today.getDate()<10?"0") today.getDate();
+        day.innerHTML=weekdays[today.getday()];
+        month.innerHTML=allmonth[today.getMonth()];
+        year.innerHTML=today.getFullYear();
+    
+        
+    </script>
+    
+    
     
 </body>
 </html>
