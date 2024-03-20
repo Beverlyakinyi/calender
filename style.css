@@ -1,0 +1,10 @@
+#calendar{
+    background-image: url(IMAGE/j.jpg);
+}
+#body{
+    font-size: 500%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#change{
+    gap: 15%;
+}
